@@ -1,0 +1,41 @@
+body {
+  margin-bottom: 20px;
+}
+
+.modalComponent-video {
+  position: relative;
+  box-sizing: border-box;
+}
+
+a,
+.player,
+.player h1,
+.player h2,
+p {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  color: #333;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin: 0;
+}
+header {
+  background-color: rgb(153, 144, 207);
+}
+
+/* 
+width: 1px;
+background: transparent;
+border-radius: 0; 
+background-color: initial; */
+
+.vimeo-iframe {
+  width: 800px;
+  border-radius: 0;
+}
+/* 
+.data_citing {
+  padding: 0;
+  margin: 0;
+} */
