@@ -42,3 +42,8 @@ background-color: initial; */
   padding: 0;
   margin: 0;
 } */
+
+.modalComponent-title {
+  font-size: 22px;
+  font-weight: 700;
+}
