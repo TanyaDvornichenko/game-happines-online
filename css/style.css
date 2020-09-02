@@ -20,9 +20,11 @@ p {
   padding-top: 10px;
   margin: 0;
 }
+
 header {
   background-color: rgb(153, 144, 207);
 }
+
 
 /* 
 width: 1px;
@@ -34,6 +36,7 @@ background-color: initial; */
   width: 800px;
   border-radius: 0;
 }
+
 /* 
 .data_citing {
   padding: 0;
