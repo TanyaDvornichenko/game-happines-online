@@ -1,560 +1,725 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
+  <body>
+    <header>
 
-<body>
-  <header>
-    <a href="./varta_Bilchogo.html"> материалы varta_Bilchogo </a>
-    <a href="#/"><svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="154px" height="32px" viewBox="0 0 208 32" version="1.1">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g class="logo-color" fill="#393939" fill-rule="nonzero">
-            <path
-              d="M13.761,10.89 L13.761,1.056 L17.325,1.056 L17.325,23.793 L13.761,23.793 L13.761,14.091 L3.498,14.091 L3.498,23.793 L0,23.793 L0,1.056 L3.498,1.056 L3.498,10.89 L13.761,10.89 Z M36.311,23.793 L32.945,23.793 L32.945,21.582 C31.988,23.166 29.777,24.123 27.764,24.123 C25.619,24.123 23.771,23.364 22.22,21.879 C20.702,20.394 19.943,18.447 19.943,16.071 C19.943,13.695 20.702,11.781 22.22,10.296 C23.771,8.811 25.619,8.052 27.764,8.052 C29.777,8.052 31.922,8.943 32.945,10.56 L32.945,8.382 L36.311,8.382 L36.311,23.793 Z M32.912,16.038 C32.912,14.619 32.417,13.464 31.46,12.639 C30.503,11.781 29.414,11.352 28.16,11.352 C26.84,11.352 25.718,11.781 24.794,12.672 C23.903,13.53 23.441,14.652 23.441,16.038 C23.441,17.424 23.903,18.579 24.794,19.47 C25.718,20.361 26.84,20.823 28.16,20.823 C30.8,20.823 32.912,18.942 32.912,16.038 Z M39.688,8.382 L43.087,8.382 L43.087,10.659 C44.011,9.042 46.123,8.052 48.235,8.052 C50.38,8.052 52.162,8.811 53.647,10.296 C55.132,11.781 55.891,13.728 55.891,16.104 C55.891,18.513 55.132,20.427 53.647,21.912 C52.162,23.397 50.38,24.123 48.235,24.123 C46.024,24.123 44.011,23.199 43.087,21.582 L43.087,31.284 L39.688,31.284 L39.688,8.382 Z M43.12,16.17 C43.12,17.589 43.582,18.744 44.506,19.602 C45.463,20.427 46.552,20.856 47.806,20.856 C50.446,20.856 52.426,18.942 52.426,16.17 C52.426,14.751 51.964,13.596 51.073,12.705 C50.182,11.814 49.093,11.352 47.806,11.352 C46.519,11.352 45.397,11.781 44.473,12.672 C43.582,13.563 43.12,14.718 43.12,16.17 Z M58.311,8.382 L61.71,8.382 L61.71,10.659 C62.634,9.042 64.746,8.052 66.858,8.052 C69.003,8.052 70.785,8.811 72.27,10.296 C73.755,11.781 74.514,13.728 74.514,16.104 C74.514,18.513 73.755,20.427 72.27,21.912 C70.785,23.397 69.003,24.123 66.858,24.123 C64.647,24.123 62.634,23.199 61.71,21.582 L61.71,31.284 L58.311,31.284 L58.311,8.382 Z M61.743,16.17 C61.743,17.589 62.205,18.744 63.129,19.602 C64.086,20.427 65.175,20.856 66.429,20.856 C69.069,20.856 71.049,18.942 71.049,16.17 C71.049,14.751 70.587,13.596 69.696,12.705 C68.805,11.814 67.716,11.352 66.429,11.352 C65.142,11.352 64.02,11.781 63.096,12.672 C62.205,13.563 61.743,14.718 61.743,16.17 Z M80.3,23.793 L76.934,23.793 L76.934,8.382 L80.3,8.382 L80.3,23.793 Z M78.617,0 C79.904,0 80.861,0.924 80.861,2.145 C80.861,3.366 79.904,4.29 78.617,4.29 C77.396,4.29 76.34,3.333 76.34,2.145 C76.34,0.957 77.396,0 78.617,0 Z M87.076,15.51 L87.076,23.793 L83.677,23.793 L83.677,8.382 L87.076,8.382 L87.076,10.692 C87.901,9.009 89.947,8.052 91.795,8.052 C95.524,8.052 97.669,10.461 97.669,14.817 L97.669,23.793 L94.27,23.793 L94.27,15.213 C94.27,12.804 93.016,11.385 91.036,11.385 C88.792,11.385 87.076,12.705 87.076,15.51 Z M115.533,16.038 C115.533,16.665 115.533,17.061 115.5,17.292 L103.257,17.292 C103.554,19.668 105.468,21.153 107.976,21.153 C109.725,21.153 111.375,20.361 112.167,18.942 L114.939,20.163 C113.619,22.77 110.88,24.123 107.811,24.123 C105.567,24.123 103.686,23.364 102.168,21.879 C100.65,20.394 99.891,18.447 99.891,16.038 C99.891,13.629 100.65,11.715 102.168,10.263 C103.686,8.778 105.567,8.052 107.811,8.052 C110.055,8.052 111.903,8.778 113.355,10.263 C114.807,11.715 115.533,13.629 115.533,16.038 Z M103.257,14.817 L112.2,14.817 C111.903,12.441 110.154,11.022 107.811,11.022 C105.402,11.022 103.554,12.474 103.257,14.817 Z M123.431,17.622 L121.352,17.127 C118.151,16.236 116.864,14.652 117.095,12.111 C117.194,10.956 117.755,9.999 118.844,9.24 C119.933,8.448 121.187,8.052 122.606,8.052 C125.642,8.052 128.051,9.537 128.216,12.606 L124.982,12.606 C124.85,11.517 123.893,10.956 122.738,10.956 C121.847,10.956 120.857,11.286 120.56,11.814 C120.296,12.243 120.263,12.705 120.428,13.2 C120.593,13.695 121.22,14.091 122.309,14.388 L124.685,14.982 C127.358,15.642 128.711,17.127 128.711,19.47 C128.711,22.374 126.17,24.123 122.573,24.123 C121.022,24.123 119.669,23.661 118.481,22.77 C117.293,21.846 116.699,20.625 116.666,19.074 L119.801,19.074 C119.966,20.427 121.088,21.285 122.837,21.285 C124.421,21.285 125.576,20.592 125.576,19.437 C125.576,18.546 124.85,17.952 123.431,17.622 Z M136.708,17.622 L134.629,17.127 C131.428,16.236 130.141,14.652 130.372,12.111 C130.471,10.956 131.032,9.999 132.121,9.24 C133.21,8.448 134.464,8.052 135.883,8.052 C138.919,8.052 141.328,9.537 141.493,12.606 L138.259,12.606 C138.127,11.517 137.17,10.956 136.015,10.956 C135.124,10.956 134.134,11.286 133.837,11.814 C133.573,12.243 133.54,12.705 133.705,13.2 C133.87,13.695 134.497,14.091 135.586,14.388 L137.962,14.982 C140.635,15.642 141.988,17.127 141.988,19.47 C141.988,22.374 139.447,24.123 135.85,24.123 C134.299,24.123 132.946,23.661 131.758,22.77 C130.57,21.846 129.976,20.625 129.943,19.074 L133.078,19.074 C133.243,20.427 134.365,21.285 136.114,21.285 C137.698,21.285 138.853,20.592 138.853,19.437 C138.853,18.546 138.127,17.952 136.708,17.622 Z M163.80925,22.50325 C162.808245,23.5170884 161.569841,24.024 160.094,24.024 C158.618159,24.024 157.38938,23.5170884 156.407625,22.50325 C155.42587,21.4894116 154.935,20.2638405 154.935,18.8265 C154.935,17.4019929 155.432287,16.1796301 156.426875,15.159375 C157.421463,14.1391199 158.656659,13.629 160.1325,13.629 C161.608341,13.629 162.840328,14.1359116 163.8285,15.14975 C164.816672,16.1635884 165.31075,17.3891595 165.31075,18.8265 C165.31075,20.2510071 164.810255,21.4765782 163.80925,22.50325 Z M160.1325,22.69575 C161.197672,22.69575 162.073538,22.3235871 162.760125,21.57925 C163.446712,20.8349129 163.79,19.9173388 163.79,18.8265 C163.79,17.7484946 163.433879,16.8309205 162.721625,16.07375 C162.009371,15.3165795 161.133505,14.938 160.094,14.938 C159.028828,14.938 158.15617,15.3133712 157.476,16.064125 C156.79583,16.8148788 156.45575,17.7356612 156.45575,18.8265 C156.45575,19.9045054 156.808663,20.8188712 157.5145,21.569625 C158.220337,22.3203788 159.092995,22.69575 160.1325,22.69575 Z M167.4365,23.793 L167.4365,13.84075 L168.91875,13.84075 L168.91875,15.57325 C169.701587,14.2770769 170.837326,13.629 172.326,13.629 C173.506673,13.629 174.43708,13.991538 175.11725,14.716625 C175.79742,15.441712 176.1375,16.4074106 176.1375,17.61375 L176.1375,23.793 L174.65525,23.793 L174.65525,17.9795 C174.65525,17.042662 174.414627,16.307961 173.933375,15.775375 C173.452123,15.242789 172.775171,14.9765 171.9025,14.9765 C171.042662,14.9765 170.330419,15.2652471 169.76575,15.84275 C169.201081,16.4202529 168.91875,17.1709954 168.91875,18.095 L168.91875,23.793 L167.4365,23.793 Z M178.87925,23.793 L178.87925,9.7405 L180.3615,9.7405 L180.3615,23.793 L178.87925,23.793 Z M183.29575,11.6655 L183.29575,10.02925 L184.98975,10.02925 L184.98975,11.6655 L183.29575,11.6655 Z M183.392,23.793 L183.392,13.84075 L184.87425,13.84075 L184.87425,23.793 L183.392,23.793 Z M187.77,23.793 L187.77,13.84075 L189.25225,13.84075 L189.25225,15.57325 C190.035087,14.2770769 191.170826,13.629 192.6595,13.629 C193.840173,13.629 194.77058,13.991538 195.45075,14.716625 C196.13092,15.441712 196.471,16.4074106 196.471,17.61375 L196.471,23.793 L194.98875,23.793 L194.98875,17.9795 C194.98875,17.042662 194.748127,16.307961 194.266875,15.775375 C193.785623,15.242789 193.108671,14.9765 192.236,14.9765 C191.376162,14.9765 190.663919,15.2652471 190.09925,15.84275 C189.534581,16.4202529 189.25225,17.1709954 189.25225,18.095 L189.25225,23.793 L187.77,23.793 Z M199.9635,19.42325 C200.066167,20.4370884 200.447955,21.242372 201.108875,21.839125 C201.769795,22.435878 202.555829,22.73425 203.467,22.73425 C204.660506,22.73425 205.706412,22.265838 206.60475,21.329 L207.52875,22.15675 C206.412244,23.4015896 205.045508,24.024 203.4285,24.024 C202.02966,24.024 200.852213,23.5395465 199.896125,22.570625 C198.940037,21.6017035 198.462,20.3536743 198.462,18.8265 C198.462,17.3763261 198.917579,16.1475467 199.82875,15.140125 C200.739921,14.1327033 201.87566,13.629 203.236,13.629 C204.660507,13.629 205.789829,14.129495 206.624,15.1305 C207.458171,16.131505 207.87525,17.3891591 207.87525,18.9035 C207.87525,19.096001 207.868833,19.2692492 207.856,19.42325 L199.9635,19.42325 Z M199.9635,18.22975 L206.37375,18.22975 C206.283916,17.2672452 205.966294,16.4683782 205.420875,15.833125 C204.875456,15.1978718 204.134338,14.88025 203.1975,14.88025 C202.350496,14.88025 201.62542,15.1946635 201.02225,15.8235 C200.41908,16.4523365 200.066167,17.2544118 199.9635,18.22975 Z">
-            </path>
-            <rect x="147.125" y="3.125" width="2.0625" height="23.375" rx="1.03125"></rect>
+      
+      <a href="./varta_Bilchogo.html"> материалы varta_Bilchogo </a>
+      <a href="#/"
+        ><svg
+          class="logo"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="154px"
+          height="32px"
+          viewBox="0 0 208 32"
+          version="1.1"
+        >
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g class="logo-color" fill="#393939" fill-rule="nonzero">
+              <path
+                d="M13.761,10.89 L13.761,1.056 L17.325,1.056 L17.325,23.793 L13.761,23.793 L13.761,14.091 L3.498,14.091 L3.498,23.793 L0,23.793 L0,1.056 L3.498,1.056 L3.498,10.89 L13.761,10.89 Z M36.311,23.793 L32.945,23.793 L32.945,21.582 C31.988,23.166 29.777,24.123 27.764,24.123 C25.619,24.123 23.771,23.364 22.22,21.879 C20.702,20.394 19.943,18.447 19.943,16.071 C19.943,13.695 20.702,11.781 22.22,10.296 C23.771,8.811 25.619,8.052 27.764,8.052 C29.777,8.052 31.922,8.943 32.945,10.56 L32.945,8.382 L36.311,8.382 L36.311,23.793 Z M32.912,16.038 C32.912,14.619 32.417,13.464 31.46,12.639 C30.503,11.781 29.414,11.352 28.16,11.352 C26.84,11.352 25.718,11.781 24.794,12.672 C23.903,13.53 23.441,14.652 23.441,16.038 C23.441,17.424 23.903,18.579 24.794,19.47 C25.718,20.361 26.84,20.823 28.16,20.823 C30.8,20.823 32.912,18.942 32.912,16.038 Z M39.688,8.382 L43.087,8.382 L43.087,10.659 C44.011,9.042 46.123,8.052 48.235,8.052 C50.38,8.052 52.162,8.811 53.647,10.296 C55.132,11.781 55.891,13.728 55.891,16.104 C55.891,18.513 55.132,20.427 53.647,21.912 C52.162,23.397 50.38,24.123 48.235,24.123 C46.024,24.123 44.011,23.199 43.087,21.582 L43.087,31.284 L39.688,31.284 L39.688,8.382 Z M43.12,16.17 C43.12,17.589 43.582,18.744 44.506,19.602 C45.463,20.427 46.552,20.856 47.806,20.856 C50.446,20.856 52.426,18.942 52.426,16.17 C52.426,14.751 51.964,13.596 51.073,12.705 C50.182,11.814 49.093,11.352 47.806,11.352 C46.519,11.352 45.397,11.781 44.473,12.672 C43.582,13.563 43.12,14.718 43.12,16.17 Z M58.311,8.382 L61.71,8.382 L61.71,10.659 C62.634,9.042 64.746,8.052 66.858,8.052 C69.003,8.052 70.785,8.811 72.27,10.296 C73.755,11.781 74.514,13.728 74.514,16.104 C74.514,18.513 73.755,20.427 72.27,21.912 C70.785,23.397 69.003,24.123 66.858,24.123 C64.647,24.123 62.634,23.199 61.71,21.582 L61.71,31.284 L58.311,31.284 L58.311,8.382 Z M61.743,16.17 C61.743,17.589 62.205,18.744 63.129,19.602 C64.086,20.427 65.175,20.856 66.429,20.856 C69.069,20.856 71.049,18.942 71.049,16.17 C71.049,14.751 70.587,13.596 69.696,12.705 C68.805,11.814 67.716,11.352 66.429,11.352 C65.142,11.352 64.02,11.781 63.096,12.672 C62.205,13.563 61.743,14.718 61.743,16.17 Z M80.3,23.793 L76.934,23.793 L76.934,8.382 L80.3,8.382 L80.3,23.793 Z M78.617,0 C79.904,0 80.861,0.924 80.861,2.145 C80.861,3.366 79.904,4.29 78.617,4.29 C77.396,4.29 76.34,3.333 76.34,2.145 C76.34,0.957 77.396,0 78.617,0 Z M87.076,15.51 L87.076,23.793 L83.677,23.793 L83.677,8.382 L87.076,8.382 L87.076,10.692 C87.901,9.009 89.947,8.052 91.795,8.052 C95.524,8.052 97.669,10.461 97.669,14.817 L97.669,23.793 L94.27,23.793 L94.27,15.213 C94.27,12.804 93.016,11.385 91.036,11.385 C88.792,11.385 87.076,12.705 87.076,15.51 Z M115.533,16.038 C115.533,16.665 115.533,17.061 115.5,17.292 L103.257,17.292 C103.554,19.668 105.468,21.153 107.976,21.153 C109.725,21.153 111.375,20.361 112.167,18.942 L114.939,20.163 C113.619,22.77 110.88,24.123 107.811,24.123 C105.567,24.123 103.686,23.364 102.168,21.879 C100.65,20.394 99.891,18.447 99.891,16.038 C99.891,13.629 100.65,11.715 102.168,10.263 C103.686,8.778 105.567,8.052 107.811,8.052 C110.055,8.052 111.903,8.778 113.355,10.263 C114.807,11.715 115.533,13.629 115.533,16.038 Z M103.257,14.817 L112.2,14.817 C111.903,12.441 110.154,11.022 107.811,11.022 C105.402,11.022 103.554,12.474 103.257,14.817 Z M123.431,17.622 L121.352,17.127 C118.151,16.236 116.864,14.652 117.095,12.111 C117.194,10.956 117.755,9.999 118.844,9.24 C119.933,8.448 121.187,8.052 122.606,8.052 C125.642,8.052 128.051,9.537 128.216,12.606 L124.982,12.606 C124.85,11.517 123.893,10.956 122.738,10.956 C121.847,10.956 120.857,11.286 120.56,11.814 C120.296,12.243 120.263,12.705 120.428,13.2 C120.593,13.695 121.22,14.091 122.309,14.388 L124.685,14.982 C127.358,15.642 128.711,17.127 128.711,19.47 C128.711,22.374 126.17,24.123 122.573,24.123 C121.022,24.123 119.669,23.661 118.481,22.77 C117.293,21.846 116.699,20.625 116.666,19.074 L119.801,19.074 C119.966,20.427 121.088,21.285 122.837,21.285 C124.421,21.285 125.576,20.592 125.576,19.437 C125.576,18.546 124.85,17.952 123.431,17.622 Z M136.708,17.622 L134.629,17.127 C131.428,16.236 130.141,14.652 130.372,12.111 C130.471,10.956 131.032,9.999 132.121,9.24 C133.21,8.448 134.464,8.052 135.883,8.052 C138.919,8.052 141.328,9.537 141.493,12.606 L138.259,12.606 C138.127,11.517 137.17,10.956 136.015,10.956 C135.124,10.956 134.134,11.286 133.837,11.814 C133.573,12.243 133.54,12.705 133.705,13.2 C133.87,13.695 134.497,14.091 135.586,14.388 L137.962,14.982 C140.635,15.642 141.988,17.127 141.988,19.47 C141.988,22.374 139.447,24.123 135.85,24.123 C134.299,24.123 132.946,23.661 131.758,22.77 C130.57,21.846 129.976,20.625 129.943,19.074 L133.078,19.074 C133.243,20.427 134.365,21.285 136.114,21.285 C137.698,21.285 138.853,20.592 138.853,19.437 C138.853,18.546 138.127,17.952 136.708,17.622 Z M163.80925,22.50325 C162.808245,23.5170884 161.569841,24.024 160.094,24.024 C158.618159,24.024 157.38938,23.5170884 156.407625,22.50325 C155.42587,21.4894116 154.935,20.2638405 154.935,18.8265 C154.935,17.4019929 155.432287,16.1796301 156.426875,15.159375 C157.421463,14.1391199 158.656659,13.629 160.1325,13.629 C161.608341,13.629 162.840328,14.1359116 163.8285,15.14975 C164.816672,16.1635884 165.31075,17.3891595 165.31075,18.8265 C165.31075,20.2510071 164.810255,21.4765782 163.80925,22.50325 Z M160.1325,22.69575 C161.197672,22.69575 162.073538,22.3235871 162.760125,21.57925 C163.446712,20.8349129 163.79,19.9173388 163.79,18.8265 C163.79,17.7484946 163.433879,16.8309205 162.721625,16.07375 C162.009371,15.3165795 161.133505,14.938 160.094,14.938 C159.028828,14.938 158.15617,15.3133712 157.476,16.064125 C156.79583,16.8148788 156.45575,17.7356612 156.45575,18.8265 C156.45575,19.9045054 156.808663,20.8188712 157.5145,21.569625 C158.220337,22.3203788 159.092995,22.69575 160.1325,22.69575 Z M167.4365,23.793 L167.4365,13.84075 L168.91875,13.84075 L168.91875,15.57325 C169.701587,14.2770769 170.837326,13.629 172.326,13.629 C173.506673,13.629 174.43708,13.991538 175.11725,14.716625 C175.79742,15.441712 176.1375,16.4074106 176.1375,17.61375 L176.1375,23.793 L174.65525,23.793 L174.65525,17.9795 C174.65525,17.042662 174.414627,16.307961 173.933375,15.775375 C173.452123,15.242789 172.775171,14.9765 171.9025,14.9765 C171.042662,14.9765 170.330419,15.2652471 169.76575,15.84275 C169.201081,16.4202529 168.91875,17.1709954 168.91875,18.095 L168.91875,23.793 L167.4365,23.793 Z M178.87925,23.793 L178.87925,9.7405 L180.3615,9.7405 L180.3615,23.793 L178.87925,23.793 Z M183.29575,11.6655 L183.29575,10.02925 L184.98975,10.02925 L184.98975,11.6655 L183.29575,11.6655 Z M183.392,23.793 L183.392,13.84075 L184.87425,13.84075 L184.87425,23.793 L183.392,23.793 Z M187.77,23.793 L187.77,13.84075 L189.25225,13.84075 L189.25225,15.57325 C190.035087,14.2770769 191.170826,13.629 192.6595,13.629 C193.840173,13.629 194.77058,13.991538 195.45075,14.716625 C196.13092,15.441712 196.471,16.4074106 196.471,17.61375 L196.471,23.793 L194.98875,23.793 L194.98875,17.9795 C194.98875,17.042662 194.748127,16.307961 194.266875,15.775375 C193.785623,15.242789 193.108671,14.9765 192.236,14.9765 C191.376162,14.9765 190.663919,15.2652471 190.09925,15.84275 C189.534581,16.4202529 189.25225,17.1709954 189.25225,18.095 L189.25225,23.793 L187.77,23.793 Z M199.9635,19.42325 C200.066167,20.4370884 200.447955,21.242372 201.108875,21.839125 C201.769795,22.435878 202.555829,22.73425 203.467,22.73425 C204.660506,22.73425 205.706412,22.265838 206.60475,21.329 L207.52875,22.15675 C206.412244,23.4015896 205.045508,24.024 203.4285,24.024 C202.02966,24.024 200.852213,23.5395465 199.896125,22.570625 C198.940037,21.6017035 198.462,20.3536743 198.462,18.8265 C198.462,17.3763261 198.917579,16.1475467 199.82875,15.140125 C200.739921,14.1327033 201.87566,13.629 203.236,13.629 C204.660507,13.629 205.789829,14.129495 206.624,15.1305 C207.458171,16.131505 207.87525,17.3891591 207.87525,18.9035 C207.87525,19.096001 207.868833,19.2692492 207.856,19.42325 L199.9635,19.42325 Z M199.9635,18.22975 L206.37375,18.22975 C206.283916,17.2672452 205.966294,16.4683782 205.420875,15.833125 C204.875456,15.1978718 204.134338,14.88025 203.1975,14.88025 C202.350496,14.88025 201.62542,15.1946635 201.02225,15.8235 C200.41908,16.4523365 200.066167,17.2544118 199.9635,18.22975 Z"
+              ></path>
+              <rect
+                x="147.125"
+                y="3.125"
+                width="2.0625"
+                height="23.375"
+                rx="1.03125"
+              ></rect>
+            </g>
           </g>
-        </g>
-      </svg>
-    </a>
-    <p class="data_citing">02.06.2020</p>
-  </header>
+        </svg>
+      </a>
+      <p class="data_citing">02.06.2020</p>
+    </header>
 
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/377745479" webkitallowfullscreen="" allowfullscreen=""
-          mozallowfullscreen="" class="video" frameborder="0" style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "></iframe>
-      </div>
-      <h4>ПРАВИЛА ИГРЫ</h4>
-    </div>
-  </div>
-
-  <div>
     <div class="modalComponent-video">
       <div class="vimeo-iframe embed-iframe">
-        <div style="padding: 56.25% 0 0 0; position: relative;">
-          <iframe src="https://player.vimeo.com/video/393469580" webkitallowfullscreen="" mozallowfullscreen=""
-            allowfullscreen="" frameborder="0" style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-              "></iframe>
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/377745479"
+            webkitallowfullscreen=""
+            allowfullscreen=""
+            mozallowfullscreen=""
+            class="video"
+            frameborder="0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
         </div>
+        <h4>ПРАВИЛА ИГРЫ</h4>
       </div>
     </div>
-    <p class="modalComponent-title">
-      Вебинар Аллы Клименко №1 —&nbsp;19:00 (Киев)
-    </p>
-  </div>
 
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/394956653" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "></iframe>
-      </div>
-      <p>Вебинар Аллы Клименко №2 — 19:00 (Киев)</p>
-    </div>
-  </div>
-
-  <!-- Урок неделя 3  -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/396470303" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "></iframe>
-      </div>
-      <p>Вебинар Аллы Клименко №3 — 19:00 (Киев)</p>
-    </div>
-  </div>
-  <!-- УРОК неделя 4  -->
-
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/397453197" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "></iframe>
-      </div>
-      <p>Вебинар Аллы Клименко №4 — 19:00 (Киев)</p>
-    </div>
-  </div>
-
-  <!-- УРОК неделя 5  -->
-
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/399901674" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "></iframe>
-      </div>
-      <p>Вебинар Аллы Клименко №5 — 19:00 (Киев)</p>
-    </div>
-  </div>
-
-  <!-- УРОК неделя 6  -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/402199012" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "></iframe>
-      </div>
-      <p>Вебинар Аллы Клименко №6 — 19:00 (Киев)</p>
-    </div>
-  </div>
-
-  <!-- вопрос-ответ 1  -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/418469959" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "></iframe>
-      </div>
-      <p>Групповой коучинг с Аллой Клименко #1</p>
-    </div>
-  </div>
-
-  <!-- вопрос-ответ  грпповой коучинг  -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/413611538" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "></iframe>
-      </div>
-      <p>Групповой коучинг с Аллой Клименко #2</p>
-    </div>
-  </div>
-
-  <!-- Групповой коучинг #3 с Аллой Клименко -->
-  <div>
-    <div class="modalComponent-video">
-      <div class="vimeo-iframe embed-iframe">
-        <div style="padding: 56.25% 0 0 0; position: relative;">
-          <iframe src="https://player.vimeo.com/video/423613387" webkitallowfullscreen="" mozallowfullscreen=""
-            allowfullscreen="" frameborder="0" style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-              "></iframe>
-        </div>
-      </div>
-    </div>
-    <p class="modalComponent-title">Групповой коучинг #3с Аллой Клименко</p>
-  </div>
-
-  <!-- Практика с Сашей Годяевой -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/378232979" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "></iframe>
-      </div>
-      <p>Практика с Сашей Годяевой</p>
-    </div>
-  </div>
-
-  <!-- Сандао дима кунин  -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/332986553" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "></iframe>
-      </div>
-      <p>Сандао дима кунин</p>
-    </div>
-  </div>
-
-  <!-- Колин Типпинг из  Института Радикального Прощения -->
-  <div class="">
     <div>
       <div class="modalComponent-video">
         <div class="vimeo-iframe embed-iframe">
-          <div style="padding: 56.25% 0 0 0; position: relative;">
-            <iframe src="https://player.vimeo.com/video/314799072" webkitallowfullscreen="" mozallowfullscreen=""
-              allowfullscreen="" frameborder="0" style="
+          <div style="padding: 56.25% 0 0 0; position: relative">
+            <iframe
+              src="https://player.vimeo.com/video/393469580"
+              webkitallowfullscreen=""
+              mozallowfullscreen=""
+              allowfullscreen=""
+              frameborder="0"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <p class="modalComponent-title">
+        Вебинар Аллы Клименко №1 —&nbsp;19:00 (Киев)
+      </p>
+    </div>
+
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/394956653"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p>Вебинар Аллы Клименко №2 — 19:00 (Киев)</p>
+      </div>
+    </div>
+
+    <!-- Урок неделя 3  -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/396470303"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p>Вебинар Аллы Клименко №3 — 19:00 (Киев)</p>
+      </div>
+    </div>
+    <!-- УРОК неделя 4  -->
+
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/397453197"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p>Вебинар Аллы Клименко №4 — 19:00 (Киев)</p>
+      </div>
+    </div>
+
+    <!-- УРОК неделя 5  -->
+
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/399901674"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p>Вебинар Аллы Клименко №5 — 19:00 (Киев)</p>
+      </div>
+    </div>
+
+    <!-- УРОК неделя 6  -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/402199012"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p>Вебинар Аллы Клименко №6 — 19:00 (Киев)</p>
+      </div>
+    </div>
+
+    <!-- вопрос-ответ 1  -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/418469959"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p>Групповой коучинг с Аллой Клименко #1</p>
+      </div>
+    </div>
+
+    <!-- вопрос-ответ  грпповой коучинг  -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/413611538"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p>Групповой коучинг с Аллой Клименко #2</p>
+      </div>
+    </div>
+
+    <!-- Групповой коучинг #3 с Аллой Клименко -->
+    <div>
+      <div class="modalComponent-video">
+        <div class="vimeo-iframe embed-iframe">
+          <div style="padding: 56.25% 0 0 0; position: relative">
+            <iframe
+              src="https://player.vimeo.com/video/423613387"
+              webkitallowfullscreen=""
+              mozallowfullscreen=""
+              allowfullscreen=""
+              frameborder="0"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <p class="modalComponent-title">Групповой коучинг #3с Аллой Клименко</p>
+    </div>
+
+    <!-- Практика с Сашей Годяевой -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/378232979"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p>Практика с Сашей Годяевой</p>
+      </div>
+    </div>
+
+    <!-- Сандао дима кунин  -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/332986553"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p>Сандао дима кунин</p>
+      </div>
+    </div>
+
+    <!-- Колин Типпинг из  Института Радикального Прощения -->
+    <div class="">
+      <div>
+        <div class="modalComponent-video">
+          <div class="vimeo-iframe embed-iframe">
+            <div style="padding: 56.25% 0 0 0; position: relative">
+              <iframe
+                src="https://player.vimeo.com/video/314799072"
+                webkitallowfullscreen=""
+                mozallowfullscreen=""
+                allowfullscreen=""
+                frameborder="0"
+                style="
                   position: absolute;
                   top: 0;
                   left: 0;
                   width: 100%;
                   height: 100%;
-                "></iframe>
+                "
+              ></iframe>
+            </div>
           </div>
         </div>
+        <p class="modalComponent-title">Видео мастер-класс Колина Типпинга</p>
       </div>
-      <p class="modalComponent-title">Видео мастер-класс Колина Типпинга</p>
     </div>
-  </div>
 
-  <!-- джесс о'райли -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe title="vimeo-player" src="https://player.vimeo.com/video/314796263" webkitallowfullscreen=""
-          mozallowfullscreen="" allowfullscreen="" frameborder="0" style="
+    <!-- джесс о'райли -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            title="vimeo-player"
+            src="https://player.vimeo.com/video/314796263"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
+        <p>джесс о'райли</p>
       </div>
-      <p>джесс о'райли</p>
     </div>
-  </div>
 
-  <!-- КОЛЯДА Александр  -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/317216904" webkitallowfullscreen="" allowfullscreen=""
-          frameborder="0" style="
+    <!-- КОЛЯДА Александр  -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/317216904"
+            webkitallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
+        <p>КОЛЯДА Александр</p>
       </div>
-      <p>КОЛЯДА Александр</p>
     </div>
-  </div>
 
-  <!-- Видео мастер-класс Яна Тиана -->
+    <!-- Видео мастер-класс Яна Тиана -->
 
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/355298015" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/355298015"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
+        <p>Видео мастер-класс Яна Тиана</p>
       </div>
-      <p>Видео мастер-класс Яна Тиана</p>
     </div>
-  </div>
-  <!-- Видео мастер-класс Видео мастер-класс Гила Петерсила
+    <!-- Видео мастер-класс Видео мастер-класс Гила Петерсила
 
  -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/389522880" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/389522880"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
+        <p>Видео мастер-класс Гила Петерсила</p>
       </div>
-      <p>Видео мастер-класс Гила Петерсила</p>
     </div>
-  </div>
 
-  <!-- Видео мастер-класс Натальи Самойленко -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/323536902" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
+    <!-- Видео мастер-класс Натальи Самойленко -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/323536902"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
+        <p>Видео мастер-класс Натальи Самойленко</p>
       </div>
-      <p>Видео мастер-класс Натальи Самойленко</p>
     </div>
-  </div>
 
-  <!-- Видео к суперзаданию -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/396761472" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
+    <!-- Видео к суперзаданию -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/396761472"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
       </div>
+      <p>Видео к суперзаданию. Прощения</p>
     </div>
-    <p>Видео к суперзаданию. Прощения</p>
-  </div>
 
-  <!-- Видео к суперзаданию -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/395192871" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
+    <!-- Видео к суперзаданию -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/395192871"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
       </div>
+      <p>
+        Видео к суперзаданию. Если бы ябыл на 100% ответственный по отношению к
+        ... целям, самоощенке, отношениям
+      </p>
     </div>
-    <p>
-      Видео к суперзаданию. Если бы ябыл на 100% ответственный по отношению к
-      ... целям, самоощенке, отношениям
-    </p>
-  </div>
 
-  <!-- Видео к суперзаданию -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/393668079" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
+    <!-- Видео к суперзаданию -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/393668079"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
       </div>
+      <p>когнитивные искажения, мои негативные мысли и оправдание самозащита</p>
     </div>
-    <p>когнитивные искажения, мои негативные мысли и оправдание самозащита</p>
-  </div>
 
-  <!-- Видео к суперзаданию -->
+    <!-- Видео к суперзаданию -->
 
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/400392550" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/400392550"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
       </div>
-    </div>
 
-    <p>Видео к суперзаданиюм. цель и миссия , мои качества</p>
-  </div>
-  <!-- Видео к суперзаданию -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/397452881" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
+      <p>Видео к суперзаданиюм. цель и миссия , мои качества</p>
+    </div>
+    <!-- Видео к суперзаданию -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/397452881"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
       </div>
+      <p>
+        Видео к суперзаданиюм. Пишем письмо вселенной, просим помощи у высшей
+        силы
+      </p>
     </div>
-    <p>
-      Видео к суперзаданиюм. Пишем письмо вселенной, просим помощи у высшей
-      силы
-    </p>
-  </div>
 
-  <!-- Видео к суперзаданию -->
-  <div class="">
-    <div>
-      <div class="modalComponent-video">
-        <div class="vimeo-iframe embed-iframe">
-          <div style="padding: 56.25% 0 0 0; position: relative;">
-            <iframe src="https://player.vimeo.com/video/402483805" webkitallowfullscreen="" mozallowfullscreen=""
-              allowfullscreen="" frameborder="0" style="
+    <!-- Видео к суперзаданию -->
+    <div class="">
+      <div>
+        <div class="modalComponent-video">
+          <div class="vimeo-iframe embed-iframe">
+            <div style="padding: 56.25% 0 0 0; position: relative">
+              <iframe
+                src="https://player.vimeo.com/video/402483805"
+                webkitallowfullscreen=""
+                mozallowfullscreen=""
+                allowfullscreen=""
+                frameborder="0"
+                style="
                   position: absolute;
                   top: 0;
                   left: 0;
                   width: 100%;
                   height: 100%;
-                ">
-            </iframe>
+                "
+              >
+              </iframe>
+            </div>
           </div>
+          <p>Видео к суперзаданию. Окружение прлдвигающее и токсичное</p>
         </div>
-        <p>Видео к суперзаданию. Окружение прлдвигающее и токсичное</p>
       </div>
     </div>
-  </div>
 
-  <!--  медитация   -->
-  <div class="modalComponent-video">
-    <div class="vimeo-iframe embed-iframe">
-      <div style="padding: 56.25% 0 0 0; position: relative;">
-        <iframe src="https://player.vimeo.com/video/317343020" webkitallowfullscreen="" mozallowfullscreen=""
-          allowfullscreen="" frameborder="0" style="
+    <!--  медитация   -->
+    <div class="modalComponent-video">
+      <div class="vimeo-iframe embed-iframe">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/317343020"
+            webkitallowfullscreen=""
+            mozallowfullscreen=""
+            allowfullscreen=""
+            frameborder="0"
+            style="
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-            "></iframe>
+            "
+          ></iframe>
+        </div>
+        <p>Медитация Аллы Клименко, бонус №3</p>
       </div>
-      <p>Медитация Аллы Клименко, бонус №3</p>
     </div>
-  </div>
 
-  <article>
-    <h2>ПРАВИЛА ИГРЫ</h2>
-    <ul>
-      <li>
-        Личный кабинет <br />В личном кабинете ты отмечаешь задания, смотришь
-        мастер-классы в календаре, следишь за своим личным прогрессом и
-        прогрессом своего МОПСа.
-      </li>
-      <li>
-        Игровое время <br />В Happiness Online есть игровое время. Игровой
-        день начинается в 00:00 по киевскому времени и заканчивается в 23:59.
-        Так как в системе предусмотрены баллы за работу МОПСов, а они могут
-        находиться в разных часовых поясах, крайне важно начислять их
-        корректно и в один день – именно поэтому все играют по одному часовому
-        поясу. В личном кабинете есть таймер по которому ты можешь видеть,
-        сколько времени осталось до конца игрового дня.
-      </li>
+    <article>
+      <h2>ПРАВИЛА ИГРЫ</h2>
+      <ul>
+        <li>
+          Личный кабинет <br />В личном кабинете ты отмечаешь задания, смотришь
+          мастер-классы в календаре, следишь за своим личным прогрессом и
+          прогрессом своего МОПСа.
+        </li>
+        <li>
+          Игровое время <br />В Happiness Online есть игровое время. Игровой
+          день начинается в 00:00 по киевскому времени и заканчивается в 23:59.
+          Так как в системе предусмотрены баллы за работу МОПСов, а они могут
+          находиться в разных часовых поясах, крайне важно начислять их
+          корректно и в один день – именно поэтому все играют по одному часовому
+          поясу. В личном кабинете есть таймер по которому ты можешь видеть,
+          сколько времени осталось до конца игрового дня.
+        </li>
 
-      <li>
-        МОПС<br />
-        У каждого участника игры будет МОПС – Мой Ответственный
-        Партнер-Супермен. Ты не можешь выбрать или поменять его сам, МОПСа в
-        случайном порядке подбирает наша система (помни, что все не
-        случайно!). В рамках игры вы можете помогать, поддерживать и
-        мотивировать друг друга. От вовлеченности и ответственности МОПСа
-        также зависит и твой личный рейтинг. МОПС появится у тебя в первый
-        день игры. В первом видео Алла Клименко расскажет подробнее, как вы
-        будете взаимодействовать. <br />
+        <li>
+          МОПС<br />
+          У каждого участника игры будет МОПС – Мой Ответственный
+          Партнер-Супермен. Ты не можешь выбрать или поменять его сам, МОПСа в
+          случайном порядке подбирает наша система (помни, что все не
+          случайно!). В рамках игры вы можете помогать, поддерживать и
+          мотивировать друг друга. От вовлеченности и ответственности МОПСа
+          также зависит и твой личный рейтинг. МОПС появится у тебя в первый
+          день игры. В первом видео Алла Клименко расскажет подробнее, как вы
+          будете взаимодействовать. <br />
 
-        МОПС<br />
-        может активно принимать участие в игре или же не всегда выполнять
-        задания: он такой же самостоятельный участник игры, как и ты,
-        вовлеченность в процесс и количество времени, которое он готов уделять
-        игре – его личное решение. Мы можем поменять МОПСа по твоему запросу
-        на почту поддержки support@happiness-online.com, если он неделю не
-        выходил с тобой на связь или не отметил выполнение ни одного задания в
-        календаре за это время. После соединения новой пары МОПСов, следующую
-        замену мы можем сделать не раньше, чем через неделю, при тех же
-        условиях. Обрати внимание, что замена МОПСа может занять время, в
-        связи с нечётным количеством участников и разной активностью МОПСов.
-      </li>
+          МОПС<br />
+          может активно принимать участие в игре или же не всегда выполнять
+          задания: он такой же самостоятельный участник игры, как и ты,
+          вовлеченность в процесс и количество времени, которое он готов уделять
+          игре – его личное решение. Мы можем поменять МОПСа по твоему запросу
+          на почту поддержки support@happiness-online.com, если он неделю не
+          выходил с тобой на связь или не отметил выполнение ни одного задания в
+          календаре за это время. После соединения новой пары МОПСов, следующую
+          замену мы можем сделать не раньше, чем через неделю, при тех же
+          условиях. Обрати внимание, что замена МОПСа может занять время, в
+          связи с нечётным количеством участников и разной активностью МОПСов.
+        </li>
 
-      <li>
-        Суперзадания<br />
-        На протяжении всего курса в среду и субботу ты будешь получать
-        суперзадания, выполнение которых будет требовать отчёта. Он может быть
-        в текстовом формате или же с фотоподтверждением о выполнении. Все
-        отчеты проверяются модератором после окончания времени, отведённого на
-        выполнение задания. За выполнение суперзаданий ты получаешь
-        дополнительные баллы, их количество значительно больше, чем за
-        ежедневные задания. После проверки отчета модератор подтверждает
-        выполнение и начисление баллов. Если модератор не принял твой отчет, у
-        тебя есть возможность отредактировать его до окончания времени на
-        выполнение суперзадания. ВНИМАНИЕ! Выполнение субботнего суперзадания
-        обязательно. За невыполнение участник выбывает из игры. Возврат
-        средств в этом случае не осуществляется.
-      </li>
+        <li>
+          Суперзадания<br />
+          На протяжении всего курса в среду и субботу ты будешь получать
+          суперзадания, выполнение которых будет требовать отчёта. Он может быть
+          в текстовом формате или же с фотоподтверждением о выполнении. Все
+          отчеты проверяются модератором после окончания времени, отведённого на
+          выполнение задания. За выполнение суперзаданий ты получаешь
+          дополнительные баллы, их количество значительно больше, чем за
+          ежедневные задания. После проверки отчета модератор подтверждает
+          выполнение и начисление баллов. Если модератор не принял твой отчет, у
+          тебя есть возможность отредактировать его до окончания времени на
+          выполнение суперзадания. ВНИМАНИЕ! Выполнение субботнего суперзадания
+          обязательно. За невыполнение участник выбывает из игры. Возврат
+          средств в этом случае не осуществляется.
+        </li>
 
-      <li>
-        Установка иконки на рабочий стол в телефоне<br />
-        Наша система – это веб-интерфейс. Он специально разработан таким
-        образом, чтобы им было удобно пользоваться и с компьютера, и с
-        телефона, и с планшета. Эта технология позволяет "сохранить" сайт как
-        иконку на рабочий стол телефона и очень быстро заходить в игру. Как
-        это сделать?<br />
+        <li>
+          Установка иконки на рабочий стол в телефоне<br />
+          Наша система – это веб-интерфейс. Он специально разработан таким
+          образом, чтобы им было удобно пользоваться и с компьютера, и с
+          телефона, и с планшета. Эта технология позволяет "сохранить" сайт как
+          иконку на рабочий стол телефона и очень быстро заходить в игру. Как
+          это сделать?<br />
 
-        Если у тебя iOS, нужно зайти в игру через браузер Safari, нажать на
-        кнопку "Поделиться" и в нижнем ряду выбрать опцию "На экран
-        "Домой".<br />
-        Посмотреть видео.
-        <a href="https://player.vimeo.com/video/331413514" target="_blank">
-          ЖМИ откроет на новое окно
-        </a>
+          Если у тебя iOS, нужно зайти в игру через браузер Safari, нажать на
+          кнопку "Поделиться" и в нижнем ряду выбрать опцию "На экран
+          "Домой".<br />
+          Посмотреть видео.
+          <a href="https://player.vimeo.com/video/331413514" target="_blank">
+            ЖМИ откроет на новое окно
+          </a>
 
-        Если у тебя Android, нужно зайти в игру через браузер Google Chrome,
-        открыть меню настроек (три точки в правом верхнем углу экрана) и
-        выбрать пункт "Добавить на главный экран". Посмотреть видео.
-      </li>
+          Если у тебя Android, нужно зайти в игру через браузер Google Chrome,
+          открыть меню настроек (три точки в правом верхнем углу экрана) и
+          выбрать пункт "Добавить на главный экран". Посмотреть видео.
+        </li>
 
-      <li></li>
-    </ul>
-  </article>
-</body>
-
+        <li></li>
+      </ul>
+    </article>
+  </body>
 </html>
